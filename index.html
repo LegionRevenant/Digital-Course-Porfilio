@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Course Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Digital Course Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my digital portfolio! Here, I showcase my journey and achievements in the field of Computer Science. 
+            I have developed skills in HTML, CSS, and JavaScript through various projects and assignments.</p>
+        <p>I'm a Junior Computer Science student at Mapúa Malayan Colleges Mindanao, with a strong passion for data science and video editing. 
+            I'm driven to create impactful solutions that leverage data insights to improve people's lives and 
+            enhance decision-making. Inspired by pioneers like Alan Turing and contemporary innovators in artificial intelligence,
+            I aspire to push the boundaries of technology to revolutionize industries and make a positive difference.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects: </h2>
+        <div class="project">
+            <h3>Project 1: Responsive Website</h3>
+            <p>Description of the project and what I learned.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Interactive Web Application</h3>
+            <p>Description of the project and the technologies used.</p>
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2>Awards and Credentials:</h2>
+        <ul>
+            <li>
+                <img src="Pictures/Credential 1.png" alt="Credential 1" style="width:150px; height:auto;">
+                <p>Credential 1 Description</p>
+            </li>
+            <li>
+                <img src="Pictures/Credential 2.png" alt="Credential 2" style="width:150px; height:auto;">
+                <p>Credential 2 Description</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me:</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="successMessage" style="display:none; color: green;">Thank you for your message!</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Digital Portfolio</p>
+    </footer>
