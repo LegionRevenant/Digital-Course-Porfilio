@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>My Digital Course Portfolio</h1>
+        <h1>Digital Course Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#awards">Awards</a></li>
+                <li><a href="#awards">Credentials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,6 +21,9 @@
 
     <section id="about">
         <h2>About Me</h2>
+        <div class="image-container">
+            <img src="Pictures/About Me.png" alt="About Me" style="width:150px; height:auto;" class="zoomable">
+        </div>
         <p>Welcome to my digital portfolio! Here, I showcase my journey and achievements in the field of Computer Science. 
             I have developed skills in HTML, CSS, and JavaScript through various projects and assignments.</p>
         <p>I'm a Junior Computer Science student at Mapúa Malayan Colleges Mindanao, with a strong passion for data science and video editing. 
@@ -30,27 +33,50 @@
     </section>
 
     <section id="projects">
-        <h2>Projects: </h2>
+        <h2>Projects and Assessments: </h2>
         <div class="project">
-            <h3>Project 1: Responsive Website</h3>
-            <p>Description of the project and what I learned.</p>
+            <h3>Project: Coffee Shop(Order and Payment Management)</h3>
+            <div class="image-container">
+                <img src="Pictures/Project 1.png" alt="Project 1" style="width:150px; height:auto;" class="zoomable">
+            </div>
+            <p>This was a responsive application project that involved both SQL Server and C++. 
+            The core application would be developed using C++ while maintaining efficiency using SQL Server for the data. 
+            In the process, I learned to implement responsive design principles within the logic of the application and its database interactions. 
+            Furthermore, I learned how to integrate this C++ application with SQL Server for proper data processing without any performance issues.
+            </p>
         </div>
         <div class="project">
-            <h3>Project 2: Interactive Web Application</h3>
-            <p>Description of the project and the technologies used.</p>
+            <h3>Assessment: My First Web Page</h3>
+            <div class="image-container">
+                <img src="Pictures/Assessment 1.png" alt="Assessment 1" style="width:150px; height:auto;" class="zoomable">
+                <img src="Pictures/Assessment 2.png" alt="Assessment 2" style="width:150px; height:auto;" class="zoomable">
+                <img src="Pictures/Assessment 3.png" alt="Assessment 3" style="width:150px; height:auto;" class="zoomable">
+            </div>
+            <p>I created a responsive desktop application using HTML and CSS. 
+                My focus was on the development of a layout that should appear both clean and structured yet works well for different screen sizes with smooth fluid transitions. 
+                Learning key responsive design principles, I learned about flexible layouts and media queries, which ensured that it would work best for any number of desktop resolutions. 
+                Techniques were also explored that enhanced usability and appeal, making the application functional.</p>
         </div>
     </section>
 
     <section id="awards">
-        <h2>Awards and Credentials:</h2>
+        <h2>Credentials:</h2>
         <ul>
             <li>
-                <img src="Pictures/Credential 1.png" alt="Credential 1" style="width:150px; height:auto;">
-                <p>Credential 1 Description</p>
+                <div class="image-container">
+                    <img src="Pictures/Credential 1.png" alt="Credential 1" style="width:150px; height:auto;" class="zoomable">
+                </div>
+                <p>Gained foundational knowledge in data science, including data analysis, visualization, statistical methods, and 
+                    machine learning concepts. Learned to work with Python/R, manipulate datasets, and use libraries such as Pandas, 
+                    NumPy, and Matplotlib. Covered key topics like exploratory data analysis (EDA), data wrangling, and basic predictive modeling.</p>
             </li>
             <li>
-                <img src="Pictures/Credential 2.png" alt="Credential 2" style="width:150px; height:auto;">
-                <p>Credential 2 Description</p>
+                <div class="image-container">
+                    <img src="Pictures/Credential 2.png" alt="Credential 2" style="width:150px; height:auto;" class="zoomable">
+                </div>
+                <p>Demonstrated proficiency in Microsoft Excel 2019, including managing worksheets and workbooks, 
+                    creating and formatting tables, using formulas and functions, applying conditional formatting, and generating charts. 
+                    Certified in hands-on, performance-based exam assessing real-world Excel skills.</p>
             </li>
         </ul>
     </section>
@@ -70,5 +96,16 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 My Digital Portfolio</p>
+        <p>&copy; 2025 Digital Portfolio</p>
     </footer>
+
+    <!-- Picture to zoom-->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
