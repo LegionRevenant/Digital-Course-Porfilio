@@ -24,6 +24,16 @@ canvas {
 }
 
 header {
+  z-index: 1; /* Set z-index higher than canvas */
+  position: relative; /* Ensure it can use z-index */
+}
+
+footer {
+  z-index: 1; /* Set z-index higher than canvas */
+}
+
+
+header {
   background: rgba(51, 51, 51, 0.8); /* Set a transparent background */
   color: #fff;
   padding: 10px 0;
@@ -76,6 +86,7 @@ image-container img {
   background: #f0f4f8;
   border-radius: 5px;
   padding-bottom: 80px; /* Add extra padding to avoid footer overlap */
+  z-index: -1; /* Set z-index higher than canvas */
 }
 
 #contactForm input,
