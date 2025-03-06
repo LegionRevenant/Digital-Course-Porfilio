@@ -15,32 +15,32 @@ body {
 
 canvas {
   display: block;
-  position: fixed; /* Change to fixed */
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* Ensure the width */
-  height: 100%; /* Ensure canvas fully covers the height */
-  z-index: -1; /* Ensure it stays behind other content */
+  width: 100%; 
+  height: 100%; 
+  z-index: -1; 
 }
 
 header {
-  z-index: 1; /* Set z-index higher than canvas */
-  position: relative; /* Ensure it can use z-index */
+  z-index: 1; 
+  position: relative; 
 }
 
 footer {
-  z-index: 1; /* Set z-index higher than canvas */
+  z-index: 1; 
 }
 
 
 header {
-  background: rgba(51, 51, 51, 0.8); /* Set a transparent background */
+  background: rgba(51, 51, 51, 0.8); 
   color: #fff;
   padding: 10px 0;
   text-align: center;
   font-family: 'Georgia', serif; 
-  z-index: 1; /* Set z-index higher than canvas */
-  position: relative; /* Ensure it can use z-index */
+  z-index: 1; 
+  position: relative; 
 }
 
 nav ul {
@@ -54,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #d52929;
   text-decoration: none;
   transition: color 0.3s; 
 }
@@ -85,8 +85,8 @@ image-container img {
   margin: 40px 0;
   background: #f0f4f8;
   border-radius: 5px;
-  padding-bottom: 80px; /* Add extra padding to avoid footer overlap */
-  z-index: -1; /* Set z-index higher than canvas */
+  padding-bottom: 80px;
+  z-index: -1; 
 }
 
 #contactForm input,
@@ -119,13 +119,13 @@ image-container img {
 footer {
   text-align: center;
   padding: 10px 0;
-  background: rgba(51, 51, 51, 0.8); /* Set a transparent background */
+  background: rgba(51, 51, 51, 0.8); 
   color: #fff;
   position: fixed;
   width: 100%;
   bottom: 0;
   height: 40px; 
-  z-index: 1; /* Set z-index higher than canvas */
+  z-index: 1; 
 }
 
 .modal {
